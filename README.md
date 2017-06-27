@@ -1,20 +1,19 @@
 # Prefix
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `prefix` to your list of dependencies in `mix.exs`:
+## "add" g to f
 
 ```elixir
-def deps do
-  [{:prefix, "~> 0.1.0"}]
-end
+iex -S mix
+Q.f
+# => world
+# => :ok
+Q.g
+# => hello
+# => :ok
+Q.h :f, :g
+# => :ok
+Q.f
+# => hello
+# => world
+# => :ok
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/prefix](https://hexdocs.pm/prefix).
-
-# prefix
