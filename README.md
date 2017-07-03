@@ -34,12 +34,12 @@ iex -S mix
 Q.f
 # => world
 # => :ok
+Q.f "cjen07"
+# => cjen07
+# => :ok
 Q.ff
 # => world
 # => world
-# => :ok
-Q.f "cjen07"
-# => cjen07
 # => :ok
 Z.h :f, :g
 # => :ok
@@ -62,11 +62,11 @@ Z.h :f, :i
 Q.f
 # => world
 # => :ok
+Q.f "cjen07"
+# => cjen07
+# => :ok
 Q.ff
 # => world
 # => world
-# => :ok
-Q.f "cjen07"
-# => cjen07
 # => :ok
 ```
