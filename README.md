@@ -70,3 +70,9 @@ Q.ff
 # => world
 # => :ok
 ```
+
+## remark
+
+  * Z.h: without code change, reversible
+
+  * Z.i: with code change, irreversible
