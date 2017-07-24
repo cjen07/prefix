@@ -1,7 +1,11 @@
 defmodule Z do
   def h(f1, f2) do
+    z(f1, f2, "lib/q.ex")
+  end
+  
+  def z(f1, f2, path) do
     Code.compiler_options(ignore_module_conflict: true)
-    {:ok, ast} = Code.string_to_quoted(File.read!("lib/q.ex"))
+    {:ok, ast} = Code.string_to_quoted(File.read!(path))
     Macro.prewalk(ast, :s1, fn x, acc ->
       case acc do
         :s1 ->
